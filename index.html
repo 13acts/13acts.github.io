@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Buttons</title>
+  <title>Data Pethealth - Petshop</title>
   <style>
+    body {
+      display: flex;
+      flex-direction: column;  /* Stack elements vertically */
+      justify-content: center;  /* Center content vertically */
+      align-items: center;  /* Center content horizontally */
+      min-height: 100vh;
+      margin: 0;
+    }
     .button {
       background-color: #4CAF50; /* Green */
       border: none;
@@ -14,9 +22,14 @@
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
+	  width: 150px;  /* Fixed width for the button */
+      height: 50px;  /* Fixed height for the button */
       margin: 4px 2px;
       cursor: pointer;
       border-radius: 5px;
+	  display: flex;  /* Enable flexbox for the button */
+  align-items: center;  /* Vertically center content within the button */
+  justify-content: center;
     }
     .button:hover {
       background-color: #45a049;
